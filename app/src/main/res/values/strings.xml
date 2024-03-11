@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HelloKitty</string>
+
+    <string name="email_subject_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <string name="your_password">Your Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="login">Login</string>
+    <string name="exit">Exit</string>
+    <string name="please_login">Please, login with your information</string>
+    <string name="welcome">Welcome</string>
+    <string name="meditation">Let\'s meditation</string>
+
+</resources>

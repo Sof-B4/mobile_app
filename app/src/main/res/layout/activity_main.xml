@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="204dp"
+        android:layout_above="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/florist_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/meditation"
+            android:textColor="@color/firstColor"
+            android:textSize="48sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textColor="@color/firstColor"
+                android:textSize="@dimen/title"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_login"
+                android:alpha="0.7"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address"
+                android:textStyle="bold"
+                android:alpha="0.7"/>
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email_subject_hint"
+                android:autofillHints="" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_password"
+                android:textStyle="bold"
+                android:alpha="0.7"/>
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:inputType="textPassword"
+                android:hint="@string/password_hint"
+                android:autofillHints="" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/text_view_email2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/email_subject_hint"
+                android:textColor="@color/secondColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_view_password2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/password_hint"
+                android:textColor="@color/secondColor"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_goToSecondActivity"
+                android:onClick="b_goToSecondActivity"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/login"
+                android:textSize="@dimen/main"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_exit"
+                android:onClick="b_exitClick"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/exit"
+                android:textSize="@dimen/main"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/t_fio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бобылева Софья Андреевна!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
+
+    <!--
+        <Button
+            android:id="@+id/b_exit"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="352dp"
+            android:onClick="b_exitClick"
+            android:text="Выход"
+            tools:layout_editor_absoluteX="149dp" />
+
+        <Button
+            android:id="@+id/b_home"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:onClick="b_home"
+            android:text="Home"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="784dp" />
+
+
+
+
+    -->
+
